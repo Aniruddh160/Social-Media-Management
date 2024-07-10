@@ -12,21 +12,48 @@ Followers Management: Keeps track of user followers and their counts.
 
 # Project Structure
 
-    app/
-    ├── alembic/               # Alembic migrations directory
-    ├── core/
-    │   ├── config.py          # Configuration settings
-    │   └── security.py        # Password hashing and verification
-    ├── db/
-    │   ├── base.py            # Base model and database session
-    │   └── models.py          # SQLAlchemy models
-    ├── routers/
-    │   ├── auth.py            # Authentication routes
-    │   └── posts.py           # Post management routes
-    ├── schemas/
-    │   ├── auth.py            # Pydantic models for authentication
-    │   └── posts.py           # Pydantic models for posts
-    └── main.py                # Entry point of the application
+    FASTAPI/
+    │
+    ├── app/
+    │   ├── __init__.py
+    │   ├── main.py
+    │   ├── database.py
+    │   ├── models.py
+    │   ├── schemas.py
+    │   ├── utils.py
+    │   ├── oauth2.py
+    │   ├── email_utils.py
+    │   ├── routers/
+    │   │   ├── __init__.py
+    │   │   ├── auth.py
+    │   │   ├── messages.py
+    │   │   ├── users.py
+    │   │   ├── votes.py
+    │   ├── core/
+    │   │   ├── __init__.py
+    │   │   ├── config.py
+    │   │   ├── security.py
+    │   ├── tests/
+    │   │   ├── __init__.py
+    │   │   ├── test_auth.py
+    │   │   ├── test_messages.py
+    │   │   ├── test_users.py
+    │   │   ├── test_votes.py
+    │
+    ├── migrations/
+    │   ├── versions/
+    │   │   ├── __init__.py
+    │   ├── env.py
+    │   ├── script.py.mako
+    │   ├── alembic.ini
+    │
+    ├── venv/
+    │   ├── ... (virtual environment files and directories)
+    │
+    ├── requirements.txt
+    ├── README.md
+    └── .env
+
 
 
 
