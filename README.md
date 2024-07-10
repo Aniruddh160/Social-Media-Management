@@ -12,21 +12,21 @@ Followers Management: Keeps track of user followers and their counts.
 
 # Project Structure
 
-app/
-├── alembic/               # Alembic migrations directory
-├── core/
-│   ├── config.py          # Configuration settings
-│   └── security.py        # Password hashing and verification
-├── db/
-│   ├── base.py            # Base model and database session
-│   └── models.py          # SQLAlchemy models
-├── routers/
-│   ├── auth.py            # Authentication routes
-│   └── posts.py           # Post management routes
-├── schemas/
-│   ├── auth.py            # Pydantic models for authentication
-│   └── posts.py           # Pydantic models for posts
-└── main.py                # Entry point of the application
+    app/
+    ├── alembic/               # Alembic migrations directory
+    ├── core/
+    │   ├── config.py          # Configuration settings
+    │   └── security.py        # Password hashing and verification
+    ├── db/
+    │   ├── base.py            # Base model and database session
+    │   └── models.py          # SQLAlchemy models
+    ├── routers/
+    │   ├── auth.py            # Authentication routes
+    │   └── posts.py           # Post management routes
+    ├── schemas/
+    │   ├── auth.py            # Pydantic models for authentication
+    │   └── posts.py           # Pydantic models for posts
+    └── main.py                # Entry point of the application
 
 
 
