@@ -138,7 +138,7 @@ Create a Post:
     Contributions are welcome! Please fork the repository and submit a pull request.
 
 # License
-    This project is licensed in the name of Aniruddh Srinivasan. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 # Contact
     For questions or suggestions, feel free to reach out at aniruddh11121@gmail.com.
